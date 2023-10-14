@@ -16,7 +16,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   late int currentTabIndex = 0;
   List<Widget> tabs = [
-    const AzkarTab(),
+    HadithTab(),
     const RadioTab(),
     const SebhaTab(),
     const QuranTab(),
@@ -89,6 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
         BottomNavigationBarItem(icon: ImageIcon(AssetImage("assets/images/ic_radio.png"),),label: "Radio"),
         BottomNavigationBarItem(icon: ImageIcon(AssetImage("assets/images/ic_sebha.png"),),label: "Sebha"),
         BottomNavigationBarItem(icon: ImageIcon(AssetImage("assets/images/svg_quran.png"),),label: "Quran"),
+        BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
       ],
     ),
   );
